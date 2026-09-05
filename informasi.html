@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi & Berita — BEM IBNU SINA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid var(--border-subtle);
+            z-index: 1000;
+            padding: 0.75rem 1rem;
+            justify-content: space-around;
+        }
+
+        .mobile-nav-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .mobile-nav-btn i {
+            font-size: 1.1rem;
+        }
+
+        .mobile-nav-btn.active {
+            color: var(--accent-ember);
+        }
+
+        @media(max-width: 768px) {
+            .mobile-nav {
+                display: flex;
+            }
+            body {
+                padding-bottom: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <div class="brand-logo-box">
+                    <img src="logobem-removebg-preview.png" alt="Logo BEM" onerror="this.style.display='none'">
+                </div>
+                <div class="brand-title">BEM IBNU SINA</div>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-tab">Beranda</a>
+                <a href="informasi.html" class="nav-tab active">Informasi</a>
+                <a href="about.html" class="nav-tab">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="tab-content active">
+            <section class="hero">
+                <div class="chapter-number">Chapter 02 / Warta</div>
+                <h1>INFORMASI & <span>BERITA TERBARU</span></h1>
+                <p>Dokumentasi kegiatan, pengumuman resmi, serta lini masa pergerakan mahasiswa BEM Ibnu Sina.</p>
+                <div class="ghost-watermark">NEWS</div>
+            </section>
+
+            <div class="section-title-wrap">
+                <h2>Arsip Publikasi</h2>
+                <div class="section-counter">[ 01 / 01 ]</div>
+            </div>
+            <div class="grid-3">
+                <div class="news-card">
+                    <div class="news-header-box">
+                        <span class="news-badge">Kampus</span>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">28 Agustus 2026</div>
+                        <h3>Pelantikan Kabinet Ksatria Avicenna Periode 2026/2027</h3>
+                        <p>Acara pelantikan pengurus inti dan kementerian baru berlangsung khidmat di Auditorium Utama Ibnu Sina.</p>
+                        <button class="btn-text" onclick="alert('Membuka berita...')">Baca Artikel <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-header-box">
+                        <span class="news-badge">Sosial</span>
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">20 Agustus 2026</div>
+                        <h3>BEM Ibnu Sina Mengabdi: Bakti Sosial di Desa Binaan</h3>
+                        <p>Program kerja tahunan bidang pengabdian masyarakat sukses menyalurkan bantuan sembako.</p>
+                        <button class="btn-text" onclick="alert('Membuka berita...')">Baca Artikel <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-header-box">
+                        <span class="news-badge">Akademik</span>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">15 Agustus 2026</div>
+                        <h3>Workshop Nasional AI & Inovasi Teknologi Mahasiswa</h3>
+                        <p>Pelatihan intensif pemanfaatan kecerdasan buatan untuk riset ilmiah mahasiswa.</p>
+                        <button class="btn-text" onclick="alert('Membuka berita...')">Baca Artikel <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-nav">
+        <a href="index.html" class="mobile-nav-btn">
+            <i class="fa-solid fa-house"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="informasi.html" class="mobile-nav-btn active">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>Informasi</span>
+        </a>
+        <a href="about.html" class="mobile-nav-btn">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Tentang</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand-col">
+                <h3>BEM IBNU SINA</h3>
+                <p>Badan Eksekutif Mahasiswa Ibnu Sina hadir sebagai pusat pergerakan, advokasi, dan kolaborasi mahasiswa yang berintegritas tinggi demi kemajuan bersama.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Media Sosial</h4>
+                <ul class="footer-links">
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 8px;"></i> Instagram</a></li>
+                    <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube" style="margin-right: 8px;"></i> YouTube</a></li>
+                    <li><a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sekretariat</h4>
+                <ul class="footer-links">
+                    <li>Gedung Student Center Lt. 2</li>
+                    <li>Kampus Ibnu Sina</li>
+                    <li>bem@ibnusina.ac.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 BEM IBNU SINA. All rights reserved.</div>
+            <div>Kabinet Ksatria Avicenna.</div>
+        </div>
+    </footer>
+</body>
+</html>

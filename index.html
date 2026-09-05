@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM IBNU SINA — Kabinet Ksatria Avicenna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid var(--border-subtle);
+            z-index: 1000;
+            padding: 0.75rem 1rem;
+            justify-content: space-around;
+        }
+
+        .mobile-nav-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .mobile-nav-btn i {
+            font-size: 1.1rem;
+        }
+
+        .mobile-nav-btn.active {
+            color: var(--accent-ember);
+        }
+
+        @media(max-width: 768px) {
+            .mobile-nav {
+                display: flex;
+            }
+            body {
+                padding-bottom: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <div class="brand-logo-box">
+                    <img src="logobem-removebg-preview.png" alt="Logo BEM" onerror="this.style.display='none'">
+                </div>
+                <div class="brand-title">BEM IBNU SINA</div>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-tab active">Beranda</a>
+                <a href="informasi.html" class="nav-tab">Informasi</a>
+                <a href="about.html" class="nav-tab">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="tab-content active">
+            <section class="hero">
+                <div class="chapter-number">Chapter 01 / Utama</div>
+                <h1>KABINET KSATRIA AVICENNA <span>BEM IBNU SINA</span></h1>
+                <p>SEDIKIT BERGERAK, BESAR BERDAMPAK!</p>
+                <div class="ghost-watermark">AVICENNA</div>
+            </section>
+
+            <!-- Visi & Misi -->
+            <div class="section-title-wrap">
+                <h2>Visi & Misi Organisasi</h2>
+                <div class="section-counter">[ 01 / 03 ]</div>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">Arah Strategis</div>
+                    <h3>Visi Organisasi</h3>
+                    <p>Terwujudnya BEM Ibnu Sina sebagai katalisator perubahan yang progresif, inklusif, dan berdedikasi tinggi dalam mengembangkan potensi mahasiswa serta berkontribusi nyata bagi masyarakat luas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-tag">Langkah Kerja</div>
+                    <h3>Misi Organisasi</h3>
+                    <ul>
+                        <li>Membangun koordinasi yang solid dan transparan antar lembaga kemahasiswaan.</li>
+                        <li>Mengoptimalkan advokasi kesejahteraan dan pengembangan akademik mahasiswa.</li>
+                        <li>Menyelenggarakan program pemberdayaan masyarakat yang berdampak luas.</li>
+                        <li>Memperkuat budaya literasi dan inovasi teknologi di lingkungan kampus.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Struktural Organisasi & Tempat Foto -->
+            <div class="section-title-wrap">
+                <h2>Struktural Pimpinan & Tempat Foto</h2>
+                <div class="section-counter">[ 02 / 03 ]</div>
+            </div>
+
+            <!-- Badan Pengurus Harian -->
+            <div style="margin-bottom: 2.5rem;">
+                <div style="font-size: 0.95rem; font-weight: 700; color: var(--accent-ember); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">Badan Pengurus Harian</div>
+                <div class="org-grid">
+                    <div class="org-card">
+                        <div class="org-avatar">
+                            <img src="alfan.jpeg " alt="Foto Alfan Rizki Maulana" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="org-info">
+                            <h4>Alfan Rizki Maulana</h4>
+                            <span>Presiden Mahasiswa</span>
+                        </div>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-avatar">
+                            <img src="ilham.jpeg" alt="Foto M. Ilham Maulana" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="org-info">
+                            <h4>M. Ilham Maulana</h4>
+                            <span>Wakil Presiden</span>
+                        </div>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-avatar">
+                            <img src="" alt="Foto Anna Nur Halimah" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="org-info">
+                            <h4>Anna Nur Halimah</h4>
+                            <span>Sekretaris Umum</span>
+                        </div>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-avatar">
+                            <img src="" alt="Foto Isyah Setyawati" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="org-info">
+                            <h4>Isyah Setyawati</h4>
+                            <span>Bendahara Umum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kementerian -->
+            <div style="font-size: 0.95rem; font-weight: 700; color: var(--accent-ember); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">Kementerian</div>
+            <div class="grid-2">
+                <!-- Kemendagri -->
+                <div class="card">
+                    <div class="card-tag">Divisi</div>
+                    <h3>Kemendagri</h3>
+                    
+                    <div style="margin-bottom: 1.25rem;">
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Jendral</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Jendral" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Nur Muhammad Yusuf Yahya</h4>
+                                <span style="font-size: 0.75rem; color: var(--accent-ember);">Kepala Divisi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Anggota</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Hana</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kemenlu -->
+                <div class="card">
+                    <div class="card-tag">Divisi</div>
+                    <h3>Kemenlu</h3>
+                    
+                    <div style="margin-bottom: 1.25rem;">
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Jendral</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Jendral" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">M. Maulana Zakaria</h4>
+                                <span style="font-size: 0.75rem; color: var(--accent-ember);">Kepala Divisi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Anggota</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Sholehuddin</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                        <div class="member-row">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Rizky Irfansyah</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kemenpora -->
+                <div class="card">
+                    <div class="card-tag">Divisi</div>
+                    <h3>Kemenpora</h3>
+                    
+                    <div style="margin-bottom: 1.25rem;">
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Jendral</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Jendral" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Ferry</h4>
+                                <span style="font-size: 0.75rem; color: var(--accent-ember);">Kepala Divisi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Anggota</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Yuda</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kominfo -->
+                <div class="card">
+                    <div class="card-tag">Divisi</div>
+                    <h3>Kominfo</h3>
+                    
+                    <div style="margin-bottom: 1.25rem;">
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Jendral</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Jendral" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Faizin</h4>
+                                <span style="font-size: 0.75rem; color: var(--accent-ember);">Kepala Divisi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Anggota</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Zainul Arifin</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pemberdayaan Perempuan -->
+                <div class="card">
+                    <div class="card-tag">Divisi</div>
+                    <h3>Pemberdayaan Perempuan</h3>
+                    
+                    <div style="margin-bottom: 1.25rem;">
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Jendral</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Jendral" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Nonik</h4>
+                                <span style="font-size: 0.75rem; color: var(--accent-ember);">Kepala Divisi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Anggota</span>
+                        <div class="member-row" style="margin-top: 6px;">
+                            <div class="member-avatar-sm">
+                                <img src="" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Amanda</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                        <div class="member-row">
+                            <div class="member-avatar-sm">
+                                <img src="aviva.jpeg" alt="Foto Anggota" onerror="this.style.display='none'">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px;">Aviva</h4>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Staf Anggota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-nav">
+        <a href="index.html" class="mobile-nav-btn active">
+            <i class="fa-solid fa-house"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="informasi.html" class="mobile-nav-btn">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>Informasi</span>
+        </a>
+        <a href="about.html" class="mobile-nav-btn">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Tentang</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand-col">
+                <h3>BEM IBNU SINA</h3>
+                <p>Badan Eksekutif Mahasiswa Ibnu Sina hadir sebagai pusat pergerakan, advokasi, dan kolaborasi mahasiswa yang berintegritas tinggi demi kemajuan bersama.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Media Sosial</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/bem.stitibnusina?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 8px;"></i> Instagram</a></li>
+                    <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube" style="margin-right: 8px;"></i> YouTube</a></li>
+                    <li><a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sekretariat</h4>
+                <ul class="footer-links">
+                    <li>Gedung Student Center Lt. 2</li>
+                    <li>Kampus Ibnu Sina</li>
+                    <li>bem@ibnusina.ac.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 BEM IBNU SINA. All rights reserved.</div>
+            <div>Kabinet Ksatria Avicenna.</div>
+        </div>
+    </footer>
+</body>
+</html>
