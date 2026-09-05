@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: bemibnusina/bemibnusina
+  branch: main
+
+local_backend: true
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "berita"
+    label: "Berita & Informasi"
+    folder: "content/berita"
+    create: true
+    fields:
+      - {label: "Judul", name: "title", widget: "string"}
+      - {label: "Tanggal", name: "date", widget: "date"}
+      - {label: "Kategori", name: "category", widget: "string"}
+      - {label: "Gambar", name: "image", widget: "image", required: false}
+      - {label: "Isi Berita", name: "body", widget: "markdown"}
